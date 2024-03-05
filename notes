@@ -1,0 +1,30 @@
+7.1 Packages and Crates
+
+Crate
+- Crate is smallest amount of code that Rust compiler considers at a time
+- Library like python libraries
+- Types of crates
+  - Binary -> has main and cmpile to executable
+  - Library -> doesn't has main and don't compile to executable
+    - They define functionality
+- Crate root -> starting file
+- src/lib.rs -> library crate -> cargo new <name> --lib
+- src/main.rs -> binary crates
+
+Package
+- Contain atmost on library crate and many binary crates
+
+7.2 Defining Modules to Control Scope and Privacy
+- Start from the crate root
+- Declaring modules
+- Declaring submodules  
+
+7.3 Paths for referring to an item in the Module Tree
+- Absolute path -> full path
+  - for code from external crate the path starts with crate name
+  - for code from current crate the path starts with crate
+- Relative path -> starts from current module and uses
+  - Self
+  - Super
+  - An identifier in current module
+- Both are separated by ::
